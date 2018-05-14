@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21D2DD90-DE19-450B-93C6-9B2B502A7A51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TankGame</RootNamespace>
+    <AssemblyName>TankGame</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boom.cs" />
+    <Compile Include="EnemyTank.cs" />
+    <Compile Include="EnemyZD.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameObject.cs" />
+    <Compile Include="image.cs" />
+    <Compile Include="PlayerTank.cs" />
+    <Compile Include="PlayerZD.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingleObject.cs" />
+    <Compile Include="soundPlayer.cs" />
+    <Compile Include="TankBorn.cs" />
+    <Compile Include="TankFather.cs" />
+    <Compile Include="Wall.cs" />
+    <Compile Include="Zhuangbei.cs" />
+    <Compile Include="ZiDanFather.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blast1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blast2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blast3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blast4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blast5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blast6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blast7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blast8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1L.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1R.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1U.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2L.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2R.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2U.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3D.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3L.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3R.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3U.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemymissile.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1tankD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1tankL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1tankR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1tankU.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tankmissile.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blast.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fire.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\born1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\born2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\born3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\born4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timer.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
